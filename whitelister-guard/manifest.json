@@ -1,0 +1,9 @@
+{
+  "name": "Whitelister Guard",
+  "description": "Guard Whitelister extension by notifying on circumvention attempts (disable, uninstall, disallow in incognito)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {"service_worker": "background.js"},
+  "permissions": ["alarms", "identity", "identity.email", "management"],
+  "host_permissions": ["<all_urls>"]
+}
