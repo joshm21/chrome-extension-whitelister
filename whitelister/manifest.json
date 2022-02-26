@@ -1,0 +1,18 @@
+{
+  "name": "Whitelister",
+  "description": "Block all websites except drive.google.com",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {"service_worker": "background.js"},
+  "permissions": ["alarms", "declarativeNetRequest", "identity", "identity.email", "management"],
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
