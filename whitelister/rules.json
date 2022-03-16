@@ -2,7 +2,17 @@
   {
     "id": 1,
     "priority": 1,
-    "action": {"type": "block" },
-    "condition": {"excludedDomains": ["drive.google.com", "chrome://extensions/"], "resourceTypes": ["main_frame"]}
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "excludedDomains": [
+        "drive.google.com",
+        "chrome://extensions/"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
   }
 ]
